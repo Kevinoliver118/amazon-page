@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #2d3750; /* Fondo oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-item a:hover {
+    color: #D4C08E;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2d3750;
+    padding: 10px;
+    list-style-type: none;
+    z-index: 10;
+}
+
+.dropdown li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #D4C08E;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/* Estilos para la información de contacto y el botón */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-btn {
+    background-color: #D4C08E;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para el dropdown de monedas */
+.dropdown-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 220px;
+}
+
+.dropdown-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilo del dropdown select */
+select {
+    appearance: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #435dd8;
+    border-radius: 10px;
+    background-color: #2d3750; /* Fondo oscuro */
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Efectos de hover y focus en el dropdown */
+select:hover {
+    border-color: #637ff4;
+}
+
+select:focus {
+    border-color: #637ff4;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #2d3750;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 80px;
+        transition: right 0.3s ease;
+        list-style-type: none;
+        z-index: 9;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item a {
+        padding: 15px;
+        display: block;
+        width: 100%;
+    }
+
+    .hamburger, .close-btn {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        border: none;
+        background: none;
+        padding: 10px 15px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .contact-info {
+        display: none;
+    }
+}
+
+.navbar.open .hamburger {
+    display: none;
+}
+
+.navbar.open .close-btn {
+    display: block;
+}
+// Estilos para el navbar con color de fondo personalizado
+.bg-custom {
+    background-color: #2d3750;
+}
+
+// Cambiar el color de texto de los enlaces en el navbar
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; // Color del texto
+    &:hover {
+        color: #ffcc00; // Color del texto al pasar el ratón
+    }
+}
+
+// Dropdown de idiomas
+.nav-item .dropdown-menu {
+    background-color: #2d3750; // Fondo del menús
+    a.dropdown-item {
+        color: #ffffff; // Color del texto en el menú
+        &:hover {
+            background-color: #1f253b; // Fondo al pasar el ratón
+            color: #ffcc00; // Color del texto al pasar el ratón
+        }
+    }
+}

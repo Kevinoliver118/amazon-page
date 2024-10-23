@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.pie-pagina {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+}
+
+.pie-pagina .grupo-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pie-pagina .box {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.pie-pagina .box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #fff; /* Color distintivo para los títulos */
+}
+
+.pie-pagina .box ul,
+.pie-pagina .box li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pie-pagina .box li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.pie-pagina .box li a:hover {
+  color: #ffcc00; /* Cambio de color al hacer hover */
+}
+
+.pie-pagina .red-social a {
+  margin: 0 10px;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.pie-pagina .red-social a:hover {
+  color: #ffcc00; /* Cambia de color cuando el cursor pasa por los íconos */
+}
+
+.pie-pagina .grupo-2 {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 40px;
+}
+
+.pie-pagina .grupo-2 small {
+  color: #aaa;
+}
+
+.pie-pagina .grupo-2 small b {
+  color: #fff;
+}
+
+.pie-pagina .box figure img {
+  max-width: 150px;
+  margin-bottom: 15px;
+  transition: filter 0.3s ease;
+}
+
+.pie-pagina .box figure img:hover {
+  filter: brightness(1) invert(0); /* Invertir colores al pasar el cursor */
+}/*# sourceMappingURL=pie-pagina.css.map */

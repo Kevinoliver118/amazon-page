@@ -1,0 +1,91 @@
+@charset "UTF-8";
+section {
+  padding: auto;
+  background-color: #456;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.intro {
+  bottom: -100px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px; /* Establece el ancho máximo del contenido */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible hasta el máximo */
+  text-align: center; /* Centra el texto */
+  padding: 20px;
+}
+
+.cont-button {
+  height: 50px;
+}
+
+.intro-img1 {
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain; /* La imagen se ajusta sin perder sus proporciones */
+  width: 100%;
+  max-width: 450px;
+  height: 550px;
+  margin-left: 80px;
+  margin-right: 560px;
+  margin-bottom: 80px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-img2 {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  margin: 20px;
+  position: relative;
+  margin-bottom: 150px;
+  margin-top: -120px;
+  margin-left: 410px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translateY(-10px); /* Mueve la imagen hacia arriba 10px */
+}
+
+.text-box {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.intro h2 {
+  color: black;
+  position: absolute; /* Cambio a absoluto para evitar que afecte el tamaño de la sección */
+  top: 90px; /* Ajusta la posición vertical */
+  left: 70%; /* Centra el título horizontalmente */
+  transform: translateX(-50%); /* Compensa el desplazamiento para centrarlo */
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: black;
+  width: 50%;
+  position: absolute; /* Posiciona el párrafo de forma absoluta */
+  top: 320px; /* Ajusta la posición vertical */
+  left: 75%; /* Centra el párrafo horizontalmente */
+  transform: translate(-50%, -50%); /* Centra completamente el párrafo */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=intro-section.css.map */
